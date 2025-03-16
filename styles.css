@@ -219,7 +219,7 @@
   /* Location Section */
   .location {
     padding: 60px 0;
-    background-color: var(--secondary-color);
+    background-color: var(--border-color);
   }
   
   .location-content {
@@ -522,7 +522,7 @@
   
   /* Footer */
   footer {
-    background-color: var(--primary-color);
+    background-color: black;
     color: var(--dark-color);
     text-align: center;
     padding: 20px 0;
