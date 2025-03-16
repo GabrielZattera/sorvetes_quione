@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Sorveteria Delícia Gelada</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/01.png" alt="">
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inico</a></li>
+                    <li><a href="cardapio.html" class="active">Cardápio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu-hero">
+        <div class="container">
+            <h2>Nosso Cardápio</h2>
+            <p>Conheça nossas deliciosas opções</p>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="buffet">Buffet</button>
+                <button class="category-btn" data-category="sorvetes">Sorvetes Expresso</button>
+                <button class="category-btn" data-category="acai">Açaí</button>
+                <button class="category-btn" data-category="salgados">Salgados</button>
+                <button class="category-btn" data-category="crepes">Crepes</button>
+                <button class="category-btn" data-category="milkshake">Milk Shake</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Buffet Section -->
+                <div class="category-content active" id="buffet">
+                    <h3>Buffet de Sorvetes</h3>
+                    <p class="price-info">Preço fixo: R$ 5,49 por 100g</p>
+                    
+                    <div class="flavor-list">
+                        <div class="flavor-column">
+                            <h4>Sabores Tradicionais</h4>
+                            <ul>
+                                <li>Chocolate</li>
+                                <li>Morango</li>
+                                <li>Baunilha</li>
+                                <li>Creme</li>
+                                <li>Flocos</li>
+                                <li>Napolitano</li>
+                            </ul>
+                        </div>
+                        <div class="flavor-column">
+                            <h4>Sabores Especiais</h4>
+                            <ul>
+                                <li>Pistache</li>
+                                <li>Cookies & Cream</li>
+                                <li>Doce de Leite</li>
+                                <li>Maracujá</li>
+                                <li>Limão</li>
+                                <li>Abacaxi</li>
+                            </ul>
+                        </div>
+                        <div class="flavor-column">
+                            <h4>Sabores Premium</h4>
+                            <ul>
+                                <li>Chocolate Belga</li>
+                                <li>Frutas Vermelhas</li>
+                                <li>Caramelo Salgado</li>
+                                <li>Menta com Chocolate</li>
+                                <li>Café</li>
+                                <li>Coco</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sorvetes Expresso Section -->
+                <div class="category-content" id="sorvetes">
+                    <h3>Sorvetes Expresso</h3>
+                    
+                    <div class="subcategory-buttons">
+                        <button class="subcategory-btn active" data-subcategory="casquinha">Casquinha</button>
+                        <button class="subcategory-btn" data-subcategory="sundae">Sundae</button>
+                        <button class="subcategory-btn" data-subcategory="cascao">Cascão</button>
+                    </div>
+                    
+                    <div class="subcategory-content active" id="casquinha">
+                        <h4>Casquinha</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Casquinha de Chocolate">
+                                <h5>Chocolate</h5>
+                                <p class="price">R$ 6,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Casquinha de Baunilha">
+                                <h5>Baunilha</h5>
+                                <p class="price">R$ 6,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Casquinha Mista">
+                                <h5>Mista</h5>
+                                <p class="price">R$ 7,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory-content" id="sundae">
+                        <h4>Sundae</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Sundae de Chocolate">
+                                <h5>Chocolate</h5>
+                                <p class="price">R$ 9,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Sundae de Baunilha">
+                                <h5>Baunilha</h5>
+                                <p class="price">R$ 9,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Sundae Misto">
+                                <h5>Misto</h5>
+                                <p class="price">R$ 10,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory-content" id="cascao">
+                        <h4>Cascão</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Cascão de Chocolate">
+                                <h5>Chocolate</h5>
+                                <p class="price">R$ 8,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Cascão de Baunilha">
+                                <h5>Baunilha</h5>
+                                <p class="price">R$ 8,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Cascão Misto">
+                                <h5>Misto</h5>
+                                <p class="price">R$ 9,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Açaí Section -->
+                <div class="category-content" id="acai">
+                    <h3>Açaí</h3>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <img src="/placeholder.svg?height=150&width=150" alt="Açaí 200ml">
+                            <h5>200ml</h5>
+                            <p class="price">R$ 10,00</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/placeholder.svg?height=150&width=150" alt="Açaí 300ml">
+                            <h5>300ml</h5>
+                            <p class="price">R$ 13,00</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/placeholder.svg?height=150&width=150" alt="Açaí 500ml">
+                            <h5>500ml</h5>
+                            <p class="price">R$ 18,00</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/placeholder.svg?height=150&width=150" alt="Açaí 700ml">
+                            <h5>700ml</h5>
+                            <p class="price">R$ 24,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salgados Section -->
+                <div class="category-content" id="salgados">
+                    <h3>Salgados</h3>
+                    <h4>Coxinha no Copo</h4>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <img src="/placeholder.svg?height=150&width=150" alt="Coxinha no Copo P">
+                            <h5>Tamanho P</h5>
+                            <p class="price">R$ 8,00</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/placeholder.svg?height=150&width=150" alt="Coxinha no Copo M">
+                            <h5>Tamanho M</h5>
+                            <p class="price">R$ 12,00</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/placeholder.svg?height=150&width=150" alt="Coxinha no Copo G">
+                            <h5>Tamanho G</h5>
+                            <p class="price">R$ 16,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crepes Section -->
+                <div class="category-content" id="crepes">
+                    <h3>Crepes</h3>
+                    
+                    <div class="subcategory-buttons">
+                        <button class="subcategory-btn active" data-subcategory="doces">Doces</button>
+                        <button class="subcategory-btn" data-subcategory="salgados-crepes">Salgados</button>
+                        <button class="subcategory-btn" data-subcategory="especiais">Especiais</button>
+                    </div>
+                    
+                    <div class="subcategory-content active" id="doces">
+                        <h4>Crepes Doces</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe de Chocolate">
+                                <h5>Chocolate</h5>
+                                <p class="description">Chocolate ao leite e granulado</p>
+                                <p class="price">R$ 15,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe de Morango">
+                                <h5>Morango</h5>
+                                <p class="description">Morango fresco e chocolate branco</p>
+                                <p class="price">R$ 16,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe de Banana">
+                                <h5>Banana</h5>
+                                <p class="description">Banana, canela e doce de leite</p>
+                                <p class="price">R$ 15,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory-content" id="salgados-crepes">
+                        <h4>Crepes Salgados</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe de Frango">
+                                <h5>Frango</h5>
+                                <p class="description">Frango desfiado, catupiry e milho</p>
+                                <p class="price">R$ 18,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe de Queijo">
+                                <h5>Queijo</h5>
+                                <p class="description">Três queijos e orégano</p>
+                                <p class="price">R$ 17,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe de Presunto">
+                                <h5>Presunto</h5>
+                                <p class="description">Presunto, queijo e tomate</p>
+                                <p class="price">R$ 17,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory-content" id="especiais">
+                        <h4>Crepes Especiais</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe Especial 1">
+                                <h5>Delícia Suprema</h5>
+                                <p class="description">Chocolate, morango, banana e sorvete</p>
+                                <p class="price">R$ 22,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe Especial 2">
+                                <h5>Carne Especial</h5>
+                                <p class="description">Carne desfiada, queijo cheddar e cebola caramelizada</p>
+                                <p class="price">R$ 24,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Crepe Especial 3">
+                                <h5>Vegetariano</h5>
+                                <p class="description">Rúcula, tomate seco, queijo brie e pesto</p>
+                                <p class="price">R$ 20,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milk Shake Section -->
+                <div class="category-content" id="milkshake">
+                    <h3>Milk Shake</h3>
+                    
+                    <div class="subcategory-buttons">
+                        <button class="subcategory-btn active" data-subcategory="tradicional">Tradicional</button>
+                        <button class="subcategory-btn" data-subcategory="especial">Especial</button>
+                        <button class="subcategory-btn" data-subcategory="gourmet">Gourmet</button>
+                        <button class="subcategory-btn" data-subcategory="alcoolico">Alcoólico</button>
+                    </div>
+                    
+                    <div class="subcategory-content active" id="tradicional">
+                        <h4>Milk Shake Tradicional</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake de Chocolate">
+                                <h5>Chocolate</h5>
+                                <p class="description">Sorvete de chocolate com leite e calda</p>
+                                <p class="price">R$ 12,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake de Morango">
+                                <h5>Morango</h5>
+                                <p class="description">Sorvete de morango com leite e calda</p>
+                                <p class="price">R$ 12,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake de Baunilha">
+                                <h5>Baunilha</h5>
+                                <p class="description">Sorvete de baunilha com leite e calda</p>
+                                <p class="price">R$ 12,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory-content" id="especial">
+                        <h4>Milk Shake Especial</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Ovomaltine">
+                                <h5>Ovomaltine</h5>
+                                <p class="description">Sorvete de chocolate com Ovomaltine crocante</p>
+                                <p class="price">R$ 15,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Cookies">
+                                <h5>Cookies</h5>
+                                <p class="description">Sorvete de baunilha com pedaços de cookies</p>
+                                <p class="price">R$ 15,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Doce de Leite">
+                                <h5>Doce de Leite</h5>
+                                <p class="description">Sorvete de doce de leite com calda especial</p>
+                                <p class="price">R$ 15,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory-content" id="gourmet">
+                        <h4>Milk Shake Gourmet</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Brownie">
+                                <h5>Brownie</h5>
+                                <p class="description">Sorvete de chocolate com pedaços de brownie e chantilly</p>
+                                <p class="price">R$ 18,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Nutella">
+                                <h5>Nutella</h5>
+                                <p class="description">Sorvete de chocolate com Nutella e avelãs</p>
+                                <p class="price">R$ 19,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Pistache">
+                                <h5>Pistache</h5>
+                                <p class="description">Sorvete de pistache com calda e pistache picado</p>
+                                <p class="price">R$ 20,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="subcategory-content" id="alcoolico">
+                        <h4>Milk Shake Alcoólico</h4>
+                        <div class="product-cards">
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Baileys">
+                                <h5>Baileys</h5>
+                                <p class="description">Sorvete de chocolate com licor Baileys</p>
+                                <p class="price">R$ 22,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Caipirinha">
+                                <h5>Caipirinha</h5>
+                                <p class="description">Sorvete de limão com cachaça e limão</p>
+                                <p class="price">R$ 22,00</p>
+                            </div>
+                            <div class="product-card">
+                                <img src="/placeholder.svg?height=150&width=150" alt="Milk Shake Rum">
+                                <h5>Chocolate com Rum</h5>
+                                <p class="description">Sorvete de chocolate com rum e raspas de chocolate</p>
+                                <p class="price">R$ 23,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sorveteria Delícia Gelada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
